@@ -27,7 +27,7 @@
         <!--プロフ-->
         <scene sceneID="AhR-hk-gbX">
             <objects>
-                <viewController id="aAs-zN-imp" sceneMemberID="viewController">
+                <viewController id="aAs-zN-imp" customClass="ProfileViewController" customModule="Ikuseiron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n53-l5-IXR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,20 +51,89 @@
                                     <navigationItem title="プロフィール" id="rWU-Xh-BpM"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idW-vP-nND">
+                                <rect key="frame" x="135" y="126" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM4-wL-eOw">
+                                <rect key="frame" x="135" y="161" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tmH-WJ-iHq">
+                                <rect key="frame" x="334" y="111" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="rhA-jo-vAv"/>
+                                    <constraint firstAttribute="height" constant="20" id="tNm-G3-9NA"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="􀈊">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="SFPro-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fmy-Z5-mwj">
+                                <rect key="frame" x="359" y="111" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="2g8-PJ-9GI"/>
+                                    <constraint firstAttribute="height" constant="20" id="CIv-3A-DLL"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="􀈊">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="SFPro-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="gear" title=""/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC7-QO-yBl">
+                                <rect key="frame" x="30" y="231" width="354" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gc8-ph-wge"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nqn-mB-msm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Nqn-mB-msm" firstAttribute="trailing" secondItem="oC7-QO-yBl" secondAttribute="trailing" constant="30" id="3B3-id-uXU"/>
+                            <constraint firstItem="idW-vP-nND" firstAttribute="leading" secondItem="ANy-C3-JJa" secondAttribute="trailing" constant="10" id="6Sg-IX-K4c"/>
+                            <constraint firstItem="oC7-QO-yBl" firstAttribute="top" secondItem="ANy-C3-JJa" secondAttribute="bottom" constant="30" id="8O3-WH-ri7"/>
+                            <constraint firstItem="tmH-WJ-iHq" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="35" id="FyM-wZ-Ak8"/>
                             <constraint firstItem="qWc-Yv-u7s" firstAttribute="top" secondItem="n53-l5-IXR" secondAttribute="top" constant="32" id="Kqb-TW-lKY"/>
+                            <constraint firstItem="Nqn-mB-msm" firstAttribute="trailing" secondItem="Fmy-Z5-mwj" secondAttribute="trailing" constant="35" id="MKq-u9-fXR"/>
+                            <constraint firstItem="idW-vP-nND" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="50" id="O02-LN-ksR"/>
+                            <constraint firstItem="oC7-QO-yBl" firstAttribute="leading" secondItem="Nqn-mB-msm" secondAttribute="leading" constant="30" id="RG4-JS-6mR"/>
                             <constraint firstItem="qWc-Yv-u7s" firstAttribute="trailing" secondItem="Nqn-mB-msm" secondAttribute="trailing" id="UI9-dn-C6k"/>
+                            <constraint firstItem="Fmy-Z5-mwj" firstAttribute="leading" secondItem="tmH-WJ-iHq" secondAttribute="trailing" constant="5" id="YZL-xt-kWE"/>
                             <constraint firstItem="qWc-Yv-u7s" firstAttribute="leading" secondItem="Nqn-mB-msm" secondAttribute="leading" id="fbT-t1-7aP"/>
+                            <constraint firstItem="PM4-wL-eOw" firstAttribute="leading" secondItem="ANy-C3-JJa" secondAttribute="trailing" constant="10" id="j8c-WD-oU1"/>
+                            <constraint firstItem="Fmy-Z5-mwj" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="35" id="nHV-yc-ZNL"/>
                             <constraint firstItem="ANy-C3-JJa" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="25" id="vnA-3S-gI7"/>
                             <constraint firstItem="ANy-C3-JJa" firstAttribute="leading" secondItem="Nqn-mB-msm" secondAttribute="leading" constant="25" id="yj3-cn-dwk"/>
+                            <constraint firstItem="PM4-wL-eOw" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="85" id="zrv-nc-Hbp"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="プロフ" image="person" id="IW6-vh-XQ5">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="ikuseiView" destination="oC7-QO-yBl" id="X2l-3W-dGu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAX-bh-WLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +164,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gear" width="22" height="22"/>
         <image name="magnifyingglass" width="19" height="19.5"/>
+        <image name="pencil" width="15.5" height="16"/>
         <image name="person" width="17" height="18.5"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">

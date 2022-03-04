@@ -17,6 +17,7 @@
 		483B839F27D125AB009847F5 /* IkuseironUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B839E27D125AB009847F5 /* IkuseironUITests.swift */; };
 		483B83A127D125AB009847F5 /* IkuseironUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83A027D125AB009847F5 /* IkuseironUITestsLaunchTests.swift */; };
 		483B83AE27D2617F009847F5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83AD27D2617F009847F5 /* TabViewController.swift */; };
+		483B83B027D29E80009847F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83AF27D29E80009847F5 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		483B839E27D125AB009847F5 /* IkuseironUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseironUITests.swift; sourceTree = "<group>"; };
 		483B83A027D125AB009847F5 /* IkuseironUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseironUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		483B83AD27D2617F009847F5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		483B83AF27D29E80009847F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				483B838827D125AB009847F5 /* LaunchScreen.storyboard */,
 				483B838B27D125AB009847F5 /* Info.plist */,
 				483B83AD27D2617F009847F5 /* TabViewController.swift */,
+				483B83AF27D29E80009847F5 /* ProfileViewController.swift */,
 			);
 			path = Ikuseiron;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			files = (
 				483B83AE27D2617F009847F5 /* TabViewController.swift in Sources */,
 				483B838227D125AB009847F5 /* ViewController.swift in Sources */,
+				483B83B027D29E80009847F5 /* ProfileViewController.swift in Sources */,
 				483B837E27D125AB009847F5 /* AppDelegate.swift in Sources */,
 				483B838027D125AB009847F5 /* SceneDelegate.swift in Sources */,
 			);
