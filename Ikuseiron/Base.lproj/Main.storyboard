@@ -31,15 +31,35 @@
                     <view key="view" contentMode="scaleToFill" id="3Y2-8h-xKC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULM-0b-wTw">
+                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="自分の育成論" id="wuE-zO-JTm"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TgW-xr-p3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ULM-0b-wTw" firstAttribute="top" secondItem="3Y2-8h-xKC" secondAttribute="top" constant="32" id="bId-js-L3i"/>
+                            <constraint firstItem="ULM-0b-wTw" firstAttribute="leading" secondItem="TgW-xr-p3F" secondAttribute="leading" id="qfl-6p-jLR"/>
+                            <constraint firstItem="ULM-0b-wTw" firstAttribute="trailing" secondItem="TgW-xr-p3F" secondAttribute="trailing" id="y95-Gr-17F"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cMg-vv-YPa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVZ-6G-Bz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-329" y="-517"/>
+            <point key="canvasLocation" x="1765" y="-538"/>
         </scene>
-        <!--プロフ-->
+        <!--Profile View Controller-->
         <scene sceneID="AhR-hk-gbX">
             <objects>
                 <viewController id="aAs-zN-imp" customClass="ProfileViewController" customModule="Ikuseiron" customModuleProvider="target" sceneMemberID="viewController">
@@ -145,6 +165,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                             <color key="baseForegroundColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ynz-A5-hyO" kind="show" id="s4B-0c-a0a"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8F-tT-B1V">
                                         <rect key="frame" x="77" y="100" width="200" height="30"/>
@@ -194,9 +217,7 @@
                             <constraint firstItem="PM4-wL-eOw" firstAttribute="top" secondItem="qWc-Yv-u7s" secondAttribute="bottom" constant="85" id="zrv-nc-Hbp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="プロフ" image="person" id="IW6-vh-XQ5">
-                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="BNS-AT-EHZ"/>
                     <connections>
                         <outlet property="bookmarkIkuseiron" destination="z8F-tT-B1V" id="Jjb-u4-AiG"/>
                         <outlet property="ikuseiTabView" destination="fpR-TC-4Cj" id="q3P-w2-5zN"/>
@@ -207,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PAX-bh-WLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-328.98550724637681" y="191.51785714285714"/>
+            <point key="canvasLocation" x="581.15942028985512" y="191.51785714285714"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="LjW-yp-iDy">
@@ -224,13 +245,34 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="aAs-zN-imp" kind="relationship" relationship="viewControllers" id="And-8J-OkG"/>
+                        <segue destination="9qT-xt-7iu" kind="relationship" relationship="viewControllers" id="And-8J-OkG"/>
                         <segue destination="3xs-Kx-UUr" kind="relationship" relationship="viewControllers" id="NEM-AI-BPI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6qH-Ah-yqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1438" y="192"/>
+        </scene>
+        <!--プロフ-->
+        <scene sceneID="PtW-Uk-aPt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9qT-xt-7iu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="プロフ" image="person" id="IW6-vh-XQ5">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J2D-Pb-8qZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aAs-zN-imp" kind="relationship" relationship="rootViewController" id="K31-Wx-MoQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpm-Wi-3N7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-328.98550724637681" y="191.51785714285714"/>
         </scene>
     </scenes>
     <resources>
