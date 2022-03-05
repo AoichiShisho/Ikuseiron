@@ -101,9 +101,22 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC7-QO-yBl">
                                 <rect key="frame" x="30" y="231" width="354" height="150"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpR-TC-4Cj">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="V6d-Bk-cis"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="fpR-TC-4Cj" firstAttribute="leading" secondItem="oC7-QO-yBl" secondAttribute="leading" id="0IX-dF-4LS"/>
+                                    <constraint firstItem="fpR-TC-4Cj" firstAttribute="top" secondItem="oC7-QO-yBl" secondAttribute="top" id="13I-Eo-TnH"/>
+                                    <constraint firstItem="fpR-TC-4Cj" firstAttribute="centerX" secondItem="oC7-QO-yBl" secondAttribute="centerX" id="CUE-U3-3wE"/>
                                     <constraint firstAttribute="height" constant="150" id="gc8-ph-wge"/>
+                                    <constraint firstAttribute="trailing" secondItem="fpR-TC-4Cj" secondAttribute="trailing" id="prR-sP-Nn7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -132,6 +145,7 @@
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="ikuseiTabView" destination="fpR-TC-4Cj" id="q3P-w2-5zN"/>
                         <outlet property="ikuseiView" destination="oC7-QO-yBl" id="X2l-3W-dGu"/>
                     </connections>
                 </viewController>
