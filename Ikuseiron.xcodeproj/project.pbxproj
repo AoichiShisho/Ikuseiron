@@ -16,8 +16,9 @@
 		483B839527D125AB009847F5 /* IkuseironTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B839427D125AB009847F5 /* IkuseironTests.swift */; };
 		483B839F27D125AB009847F5 /* IkuseironUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B839E27D125AB009847F5 /* IkuseironUITests.swift */; };
 		483B83A127D125AB009847F5 /* IkuseironUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83A027D125AB009847F5 /* IkuseironUITestsLaunchTests.swift */; };
-		483B83AE27D2617F009847F5 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83AD27D2617F009847F5 /* TabViewController.swift */; };
 		483B83B027D29E80009847F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83AF27D29E80009847F5 /* ProfileViewController.swift */; };
+		48E889AB27D472DA00375E0E /* IkuseironViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E889AA27D472DA00375E0E /* IkuseironViewController.swift */; };
+		48E889AD27D480C000375E0E /* NewIkuseironViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E889AC27D480C000375E0E /* NewIkuseironViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,9 @@
 		483B839A27D125AB009847F5 /* IkuseironUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IkuseironUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483B839E27D125AB009847F5 /* IkuseironUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseironUITests.swift; sourceTree = "<group>"; };
 		483B83A027D125AB009847F5 /* IkuseironUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseironUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		483B83AD27D2617F009847F5 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		483B83AF27D29E80009847F5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		48E889AA27D472DA00375E0E /* IkuseironViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkuseironViewController.swift; sourceTree = "<group>"; };
+		48E889AC27D480C000375E0E /* NewIkuseironViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIkuseironViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,9 @@
 				483B838627D125AB009847F5 /* Assets.xcassets */,
 				483B838827D125AB009847F5 /* LaunchScreen.storyboard */,
 				483B838B27D125AB009847F5 /* Info.plist */,
-				483B83AD27D2617F009847F5 /* TabViewController.swift */,
 				483B83AF27D29E80009847F5 /* ProfileViewController.swift */,
+				48E889AA27D472DA00375E0E /* IkuseironViewController.swift */,
+				48E889AC27D480C000375E0E /* NewIkuseironViewController.swift */,
 			);
 			path = Ikuseiron;
 			sourceTree = "<group>";
@@ -264,10 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				483B83AE27D2617F009847F5 /* TabViewController.swift in Sources */,
+				48E889AD27D480C000375E0E /* NewIkuseironViewController.swift in Sources */,
 				483B838227D125AB009847F5 /* ViewController.swift in Sources */,
 				483B83B027D29E80009847F5 /* ProfileViewController.swift in Sources */,
 				483B837E27D125AB009847F5 /* AppDelegate.swift in Sources */,
+				48E889AB27D472DA00375E0E /* IkuseironViewController.swift in Sources */,
 				483B838027D125AB009847F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,16 +24,16 @@
             </objects>
             <point key="canvasLocation" x="-1439" y="1025"/>
         </scene>
-        <!--View Controller-->
+        <!--Ikuseiron View Controller-->
         <scene sceneID="mAC-m8-aRr">
             <objects>
-                <viewController id="ynz-A5-hyO" sceneMemberID="viewController">
+                <viewController id="ynz-A5-hyO" customClass="IkuseironViewController" customModule="Ikuseiron" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Y2-8h-xKC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULM-0b-wTw">
-                                <rect key="frame" x="0.0" y="32" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="45" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" red="1" green="0.49019607840000001" blue="0.49019607840000001" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
@@ -44,20 +44,79 @@
                                     <navigationItem title="自分の育成論" id="wuE-zO-JTm"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riz-ET-R53">
+                                <rect key="frame" x="107" y="113" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ToA-j2-m7n"/>
+                                    <constraint firstAttribute="width" constant="200" id="uIr-gG-lNE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="育成論を作成する">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                    <color key="baseForegroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kKv-19-bEq" kind="show" id="OQD-Kh-koP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TgW-xr-p3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ULM-0b-wTw" firstAttribute="top" secondItem="3Y2-8h-xKC" secondAttribute="top" constant="32" id="bId-js-L3i"/>
+                            <constraint firstItem="riz-ET-R53" firstAttribute="top" secondItem="TgW-xr-p3F" secondAttribute="top" constant="25" id="6jr-Ap-p5s"/>
+                            <constraint firstItem="ULM-0b-wTw" firstAttribute="top" secondItem="3Y2-8h-xKC" secondAttribute="top" constant="45" id="bId-js-L3i"/>
                             <constraint firstItem="ULM-0b-wTw" firstAttribute="leading" secondItem="TgW-xr-p3F" secondAttribute="leading" id="qfl-6p-jLR"/>
+                            <constraint firstItem="riz-ET-R53" firstAttribute="centerX" secondItem="3Y2-8h-xKC" secondAttribute="centerX" id="qxC-V8-7ys"/>
                             <constraint firstItem="ULM-0b-wTw" firstAttribute="trailing" secondItem="TgW-xr-p3F" secondAttribute="trailing" id="y95-Gr-17F"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cMg-vv-YPa"/>
+                    <connections>
+                        <outlet property="createIkuseiron" destination="riz-ET-R53" id="ByM-gO-5YT"/>
+                        <outlet property="myIkuseironNavigationBar" destination="ULM-0b-wTw" id="ozz-GI-A0q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mVZ-6G-Bz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1765" y="-538"/>
+        </scene>
+        <!--New Ikuseiron View Controller-->
+        <scene sceneID="yYL-Mi-Ww2">
+            <objects>
+                <viewController id="kKv-19-bEq" customClass="NewIkuseironViewController" customModule="Ikuseiron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEH-ZB-4Qp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROS-qg-t28">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" red="1" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="新規作成" id="eMu-d8-3uo"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WUX-4J-HKo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ROS-qg-t28" firstAttribute="centerX" secondItem="FEH-ZB-4Qp" secondAttribute="centerX" id="33F-4G-tHg"/>
+                            <constraint firstItem="ROS-qg-t28" firstAttribute="top" secondItem="FEH-ZB-4Qp" secondAttribute="top" constant="44" id="AZm-wT-AHf"/>
+                            <constraint firstAttribute="trailing" secondItem="ROS-qg-t28" secondAttribute="trailing" id="BNG-3G-pyp"/>
+                            <constraint firstItem="ROS-qg-t28" firstAttribute="leading" secondItem="FEH-ZB-4Qp" secondAttribute="leading" id="eX3-xd-pf6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NY1-Ub-CFA"/>
+                    <connections>
+                        <outlet property="newIkuseironNavigationBar" destination="ROS-qg-t28" id="0gt-Fl-cGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2i-R0-vSP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2749" y="-538"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="AhR-hk-gbX">
