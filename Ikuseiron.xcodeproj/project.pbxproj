@@ -19,6 +19,7 @@
 		483B83B027D29E80009847F5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B83AF27D29E80009847F5 /* ProfileViewController.swift */; };
 		48E889AB27D472DA00375E0E /* IkuseironViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E889AA27D472DA00375E0E /* IkuseironViewController.swift */; };
 		48E889AD27D480C000375E0E /* NewIkuseironViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E889AC27D480C000375E0E /* NewIkuseironViewController.swift */; };
+		48E889B027D4D93600375E0E /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 48E889AF27D4D93600375E0E /* Eureka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E889B027D4D93600375E0E /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = Ikuseiron;
+			packageProductDependencies = (
+				48E889AF27D4D93600375E0E /* Eureka */,
+			);
 			productName = Ikuseiron;
 			productReference = 483B837A27D125AB009847F5 /* Ikuseiron.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 483B837127D125AA009847F5;
+			packageReferences = (
+				48E889AE27D4D93500375E0E /* XCRemoteSwiftPackageReference "eureka" */,
+			);
 			productRefGroup = 483B837B27D125AB009847F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -616,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48E889AE27D4D93500375E0E /* XCRemoteSwiftPackageReference "eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/eureka";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48E889AF27D4D93600375E0E /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48E889AE27D4D93500375E0E /* XCRemoteSwiftPackageReference "eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 483B837227D125AA009847F5 /* Project object */;
 }
